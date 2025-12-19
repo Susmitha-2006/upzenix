@@ -1,0 +1,127 @@
+/* Page center */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f4f8;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main container */
+.app {
+  width: 100%;
+  max-width: 420px;   /* controls entire app width */
+  margin-top: 50px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* Add task section */
+.add-task {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-task button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background: #4a5cff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  width: 32%;              /* medium size, same row */
+  padding: 7px 0;
+  font-size: 13px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background: #4a5cff;
+  color: white;
+  border-color: #4a5cff;
+}
+
+/* Task item */
+.task {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fafafa;
+}
+
+.task span {
+  flex: 1;
+  font-size: 14px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Task buttons */
+.task button {
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: #e0e0e0;
+}
+
+.task button:last-child {
+  background: #ffd6d6;
+  color: #b00000;
+}
+
+/* Empty message */
+.empty {
+  text-align: center;
+  margin-top: 20px;
+  color: gray;
+  font-size: 14px;
+}
+
+input:disabled,
+button:disabled {
+  background: #eee;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
